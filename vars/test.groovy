@@ -1,10 +1,10 @@
-def call(String repoUrl) {
+def call(String repoUrl , String nextparam) {
   pipeline {
        agent any
        stages {
            stage("First Print stage") {
                steps {
-                   sh "echo First"
+		       sh "echo ${nextparam}"
                }
            }
            stage("Second Print") {
