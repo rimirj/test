@@ -1,11 +1,13 @@
-def call(String firstparam)
+def call(String firstparam){
 pipeline {
 	agent any	
 	stages {
-		stage("First Stage")
+		stage("First Stage") {
 			steps {
 				sh "echo ${firstparam}"
 				
 				  }
 			}
 		}
+	}
+}
