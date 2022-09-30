@@ -1,13 +1,19 @@
-def call(String firstparam){
-pipeline {
-	agent any	
-	stages {
-		stage("First Stage") {
-			steps {
-				sh "echo ${firstparam}"
-				
-				  }
-			}
-		}
-	}
+def call(String repoUrl) {
+  pipeline {
+       agent any
+       stages {
+           stage("First Print stage") {
+               steps {
+                   sh "echo First"
+               }
+           }
+           stage("Second Print") {
+               steps {
+		       sh "echo ${repoUrl}"
+                       
+               }
+           }
+           
+       }
+   }
 }
