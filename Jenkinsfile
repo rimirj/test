@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define the Artifactory server name. This should match the server name configured in Jenkins.
-        ARTIFACTORY_SERVER = 'sev1'
+        ARTIFACTORY_SERVER = 'sev1'  // Replace with the name you configured in Jenkins.
     }
 
     stages {
@@ -16,8 +16,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                // Your build steps here
-                echo 'nothing'
+                echo'nothing'
             }
         }
 
