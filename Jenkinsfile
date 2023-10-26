@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define the Artifactory server name. This should match the server name configured in Jenkins.
-        ARTIFACTORY_SERVER = 'https://personaltrail.jfrog.io/ui/login/'
+        ARTIFACTORY_SERVER = 'sev1'
     }
 
     stages {
